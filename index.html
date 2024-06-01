@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <title>Frontend Mentor | Blog preview card</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            sans: ['"Figtree"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+<body class="bg-yellow-400 font-sans h-screen flex justify-center items-center box-border">
+
+  <section class="bg-white w-full max-w-sm rounded-2xl border-2 border-black shadow-[7px_7px_0_black] p-5 hover:shadow-[13px_13px_0_black] transition-shadow">
+    <img class="rounded-xl w-full" alt="foundations" src="assets/images/illustration-article.svg"/>
+    <span class="bg-yellow-400 inline-block px-3 py-1 rounded text-sm font-extrabold mt-5 mb-3">Learning</span>
+
+    <p class="text-sm">Published 21 Dec 2023</p>
+
+    <a class="inline-block font-extrabold text-2xl my-4 hover:text-yellow-400 cursor-pointer">HTML & CSS foundations</a>
+
+    <p class="text-gray-400 text-base">These languages are the backbone of every website, defining structure, content, and presentation.</p>
+
+    <div class="flex gap-4 items-center mt-6">
+      <img class="w-10" alt="Greg Hooper" src="assets/images/image-avatar.webp"/>
+      <p class="font-bold">Greg Hooper</p>
+    </div>
+  </section>
+
+</body>
+</html>
